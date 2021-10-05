@@ -39,6 +39,9 @@ jobs:
           sudo apt-get install -y python3-flask-sqlalchemy
           echo Hello, world!
           
+          
+      - name: Test with pytest
+        run: pytest
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
