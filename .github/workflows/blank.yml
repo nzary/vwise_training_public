@@ -35,6 +35,7 @@ jobs:
           sudo apt update
           sudo apt install python3.8
           python --version
+          pip istall flask
           python main.py
 
       # Runs a set of commands using the runners shell
