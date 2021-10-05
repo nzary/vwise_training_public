@@ -36,7 +36,7 @@ jobs:
           sudo apt install python3.8
           python --version
           pip install Flask
-          pip install -U Flask-SQLAlchemy
+          sudo apt-get install -y python3-flask-sqlalchemy
           echo Hello, world!
           python main.py
           echo Hello,!
