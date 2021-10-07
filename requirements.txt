@@ -15,7 +15,6 @@ bidict==0.21.2
 blinker==1.4
 boto3==1.18.32
 botocore==1.21.32
-Brlapi==0.7.0
 cachetools==4.2.2
 certifi==2019.11.28
 cffi==1.14.6
