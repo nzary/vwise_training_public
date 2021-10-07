@@ -1,12 +1,18 @@
 FROM python:3.7-slim
 
+RUN python3 -m venv /opt/venv
+# COPY . ./
 
-COPY . ./
+
+COPY requirements.txt .
+RUN . /opt/venv/bin/activate && pip install -r requirements.txt
 
 RUN pip install Flask
+RUN pip install -U Flask-SQLAlchemy
 ENV PORT 8080
 
-CMD ["python3", "main.py"]
+COPY main.py .
+CMD . /opt/venv/bin/activate && exec python main.py
 
 
    
